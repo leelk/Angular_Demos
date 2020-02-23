@@ -1,1 +1,38 @@
-<p>test works!</p>
+
+<h3>This is our test component.. !</h3>
+
+{{10+20+20}}
+
+<h2>My name is {{name}}</h2>
+
+
+<h3>{{print()}}</h3>
+
+<div>
+  <li *ngFor="let c of customers">
+   {{c}}
+  </li>
+</div>
+
+<div class="col-sm-6" style="text-align: center">
+  <table class="table table-hover table-borderd" style="margin-left: 450px;">
+    <thead>
+    <tr>
+      <th>ItemCode</th>
+      <th>Description</th>
+      <th>QtyOnHand</th>
+      <th>UnitPrice</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let c of customers">
+      <td>{{c.code}}</td>
+      <td>{{c.description}}</td>
+      <td>{{c.qtyOnHand}}</td>
+      <td>{{c.unitPrice}}</td>
+    </tr>
+    </tbody>
+
+
+  </table>
+</div>
