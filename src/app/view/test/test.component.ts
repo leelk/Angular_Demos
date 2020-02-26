@@ -10,6 +10,9 @@ import {Item} from "../../dto/item";
 })
 export class TestComponent implements OnInit {
 
+  something='ISJE';
+
+
   name ='Leel';
   colors: Array<String> =['Green','Yellow','Red','Blue'];
   customers:Array<Item> = [];

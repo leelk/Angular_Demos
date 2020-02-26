@@ -8,31 +8,48 @@
 
 <h3>{{print()}}</h3>
 
+
+<hr>
+
+<div class="form-group">
+  <label>Enter something here</label>
+  <input [value]="something" (input)="something=$any($event.target).value" class="form-control" type="text">
+</div>
+
 <div>
-  <li *ngFor="let c of customers">
-   {{c}}
-  </li>
+  output
+  <div>{{something}}</div>
 </div>
 
-<div class="col-sm-6" style="text-align: center">
-  <table class="table table-hover table-borderd" style="margin-left: 450px;">
-    <thead>
-    <tr>
-      <th>ItemCode</th>
-      <th>Description</th>
-      <th>QtyOnHand</th>
-      <th>UnitPrice</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr *ngFor="let c of customers">
-      <td>{{c.code}}</td>
-      <td>{{c.description}}</td>
-      <td>{{c.qtyOnHand}}</td>
-      <td>{{c.unitPrice}}</td>
-    </tr>
-    </tbody>
+
+<hr>
 
 
-  </table>
-</div>
+<!--<div>-->
+<!--  <li *ngFor="let c of customers">-->
+<!--   {{c}}-->
+<!--  </li>-->
+<!--</div>-->
+
+<!--<div class="col-sm-6" style="text-align: center">-->
+<!--  <table class="table table-hover table-borderd" style="margin-left: 450px;">-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--      <th>ItemCode</th>-->
+<!--      <th>Description</th>-->
+<!--      <th>QtyOnHand</th>-->
+<!--      <th>UnitPrice</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--    <tr *ngFor="let c of customers">-->
+<!--      <td>{{c.code}}</td>-->
+<!--      <td>{{c.description}}</td>-->
+<!--      <td>{{c.qtyOnHand}}</td>-->
+<!--      <td>{{c.unitPrice}}</td>-->
+<!--    </tr>-->
+<!--    </tbody>-->
+
+
+<!--  </table>-->
+<!--</div>-->
